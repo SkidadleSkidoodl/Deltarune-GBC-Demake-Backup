@@ -1,0 +1,577 @@
+{
+  "_resourceType": "scene",
+  "id": "4f8ef08d-f129-47ad-ae76-04f137843dd2",
+  "_index": 2,
+  "name": "goner_maker",
+  "backgroundId": "9f35e02d-bf0b-4fd1-b9cf-43128eee84dd",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [
+    "default-bg-4"
+  ],
+  "collisions": "00168+",
+  "autoFadeSpeed": 4,
+  "symbol": "scene_3",
+  "x": 616,
+  "y": 32,
+  "script": [
+    {
+      "command": "EVENT_TEXT_SET_SOUND_EFFECT",
+      "args": {
+        "type": "tone",
+        "pitch": 1,
+        "frequency": 5,
+        "duration": 0.05,
+        "effect": 0,
+        "__collapse": false
+      },
+      "id": "fc8a66bb-f921-431f-935c-4be2cacb3e21"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "crash",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 4.25,
+        "wait": false,
+        "effect": 0
+      },
+      "id": "21a40b3f-8735-4b27-afba-01abf8f2e1dd"
+    },
+    {
+      "command": "EVENT_MUSIC_PLAY",
+      "args": {
+        "musicId": "22481567-af4c-47d2-99d5-fb7350e4404e"
+      },
+      "id": "572fefce-eeb3-4e0c-b28b-d9e0410a8c92"
+    },
+    {
+      "command": "EVENT_WAIT",
+      "args": {
+        "time": {
+          "type": "number",
+          "value": 1
+        },
+        "frames": {
+          "type": "number",
+          "value": 1
+        },
+        "__collapse": true
+      },
+      "id": "d16284b0-c952-4ba3-91c1-e5cba02d62f0"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!  I HAVE ALREADY\n\n",
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!  I HAVE ALREADY\n\n CREATED A VESSEL"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 2,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "76badccf-261b-4580-a3b6-0edec02f4efe"
+    },
+    {
+      "command": "EVENT_FADE_OUT",
+      "args": {
+        "speed": 2
+      },
+      "id": "633d0295-d94a-499a-9163-cc9a909d9545"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "crash",
+        "priority": "medium",
+        "pitch": 4,
+        "frequency": 200,
+        "duration": 0.5,
+        "wait": false,
+        "effect": 0
+      },
+      "id": "9835a0ff-9d77-4460-8bc0-02fa9ba41ddc"
+    },
+    {
+      "command": "EVENT_ACTOR_SET_SPRITE",
+      "args": {
+        "actorId": "445b0b31-8c51-4a88-9de0-c47622bcf139",
+        "spriteSheetId": "969a051c-c29f-4058-8b95-649e36ea73a5"
+      },
+      "id": "9e5edae1-e98a-43e1-ab0c-a7fee633958b"
+    },
+    {
+      "command": "EVENT_FADE_IN",
+      "args": {
+        "speed": 4
+      },
+      "id": "17af7166-4a91-4571-8c54-3e29b7540edd"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!   LET US SHAPE\n\n   ",
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!   LET US SHAPE\n\n    ITS MIND",
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!\n   AS YOUR OWN\n",
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!   WHAT IS ITS\n\n  FAVORITE FOOD?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 2,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "66128950-7a73-46d1-bfcc-903c6f8493a1"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 6,
+        "option1": "SWEET",
+        "option2": "SOFT",
+        "option3": "SOUR",
+        "option4": "SALTY",
+        "option5": "PAIN",
+        "option6": "COLD",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue",
+        "__collapse": false
+      },
+      "id": "7a70c5b3-f2da-4d89-b6d4-fa009435850f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!  YOUR FAVORITE\n\n   BLOOD TYPE?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 2,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "4219d133-cbbb-4e5d-bfde-d03db090f6a4"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 5,
+        "option1": "A",
+        "option2": "AB",
+        "option3": "B",
+        "option4": "C",
+        "option5": "D",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue",
+        "__collapse": true
+      },
+      "id": "347d1c54-cfa5-4caf-be6c-d62e6ae0d3aa"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47! WHAT COLOR DOES\n\n  IT LIKE MOST?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 2,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "f3fb4ded-76fc-47fe-b9e6-63bb39625582"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 4,
+        "option1": "RED",
+        "option2": "BLUE",
+        "option3": "GREEN",
+        "option4": "CYAN",
+        "option5": "D",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue",
+        "__collapse": true
+      },
+      "id": "6b6b9005-549e-4958-8b30-1116abc62675"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!  PLEASE GIVE IT\n\n     A GIFT."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 2,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "118083a5-9c45-41e3-a4f5-a8cf04420287"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 5,
+        "option1": "KINDNES",
+        "option2": "MIND",
+        "option3": "AMBITION",
+        "option4": "BRAVERY",
+        "option5": "VOICE",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue",
+        "__collapse": true
+      },
+      "id": "51cbcf56-682a-4790-a3a6-25647642baad"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47! HOW DO YOU FEEL\n\nABOUT YOUR VESSEL?",
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!\n(IT WILL NOT HEAR)\n"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 2,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "0a6d8359-8955-4b7c-a84a-f6e7244de9ed"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 4,
+        "option1": "LOVE",
+        "option2": "HOPE",
+        "option3": "DISGUST",
+        "option4": "FEAR",
+        "option5": "VOICE",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "dialogue",
+        "__collapse": true
+      },
+      "id": "293d9643-a6bf-43db-b0cb-c39cbd71635d"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!HAVE YOU ANSWERED\n\n    HONESTLY?"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 2,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "113997d5-67f2-4b0e-be93-9f07695b8afa"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "YES",
+        "option2": "NO",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": true,
+        "layout": "menu",
+        "cancelOnLastOption": false,
+        "__collapse": true
+      },
+      "id": "4e17f5c1-2bf8-484e-85c4-4ca2848c913e"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!YOU ACKNOWLRDGE\n\nTHE POSSIBILITY OF",
+          "\n!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!PAIN AND SEIZURE.\n"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 2,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "32917552-9903-4461-8ffd-40728c76b507"
+    },
+    {
+      "command": "EVENT_MENU",
+      "args": {
+        "variable": "L0",
+        "items": 2,
+        "option1": "YES",
+        "option2": "NO",
+        "option3": "",
+        "option4": "",
+        "option5": "",
+        "option6": "",
+        "option7": "",
+        "option8": "",
+        "cancelOnB": false,
+        "layout": "menu",
+        "cancelOnLastOption": false,
+        "__collapse": false
+      },
+      "id": "9cc8bbe1-c201-4a68-a945-00c3c7883b1f"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!\n    UNDERSTOOD.\n"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 2,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "f511379c-02f1-456f-b1a3-2ff869114e02"
+    },
+    {
+      "command": "EVENT_IF",
+      "args": {
+        "condition": {
+          "type": "eq",
+          "valueA": {
+            "type": "variable",
+            "value": "L0"
+          },
+          "valueB": {
+            "type": "number",
+            "value": 2
+          }
+        },
+        "__collapseElse": true,
+        "__collapse": false
+      },
+      "children": {
+        "true": [
+          {
+            "command": "EVENT_MUSIC_STOP",
+            "args": {},
+            "id": "83e6c5d7-a408-4be1-91c8-06de1509f9bb"
+          },
+          {
+            "command": "EVENT_SWITCH_SCENE",
+            "args": {
+              "sceneId": "e1bb6b59-8834-4b1e-a820-ead66e12f649",
+              "x": {
+                "type": "number",
+                "value": 0
+              },
+              "y": {
+                "type": "number",
+                "value": 0
+              },
+              "direction": "",
+              "fadeSpeed": 1,
+              "__collapse": false
+            },
+            "id": "a3705031-93aa-4bc4-85e7-7faa991c3123"
+          }
+        ],
+        "false": []
+      },
+      "id": "ebcd3877-00e9-43f6-8c9a-a00b7730f088"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!    THANK YOU\n\n  FOR YOUR TIME.",
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!\n  YOUR ANSWERS\n",
+          "!F:4bd653f0-e08d-424e-9e5b-c1f3aaa21e47!  YOUR WONDERFUL\n\n    CREATION"
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": "true",
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 2,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "8ffa819c-f3b0-4d8b-9974-fb6eabb35bb4"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "4c217f2a-937a-4c38-96ab-2c464dc0c9d9",
+        "x": {
+          "type": "number",
+          "value": 0
+        },
+        "y": {
+          "type": "number",
+          "value": 0
+        },
+        "direction": "left",
+        "fadeSpeed": 0,
+        "__collapse": false
+      },
+      "id": "c966c48e-af3f-4caa-8ca4-479094ae9806"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "c5181b37-466a-4e32-b84a-18076bb63ad4"
+}

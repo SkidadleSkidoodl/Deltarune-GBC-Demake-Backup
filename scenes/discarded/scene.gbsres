@@ -1,0 +1,118 @@
+{
+  "_resourceType": "scene",
+  "id": "4c217f2a-937a-4c38-96ab-2c464dc0c9d9",
+  "_index": 3,
+  "name": "discarded",
+  "backgroundId": "f4e81bd9-aade-47c7-b181-fba9e266b880",
+  "tilesetId": "",
+  "width": 20,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_4",
+  "x": 800,
+  "y": 32,
+  "script": [
+    {
+      "command": "EVENT_MUSIC_STOP",
+      "args": {},
+      "id": "bf0436b9-d48d-4f41-8c1c-b04109b1adbe"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "                           Will now be\n\n                            discarded.\n\n",
+          "                     No one can choose\n\n                         who they are\n\n                         in this world."
+        ],
+        "__section": "text",
+        "avatarId": "",
+        "minHeight": 5,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": false,
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 4,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "489f5dd7-37b5-47fc-83a5-9f5aabef0351"
+    },
+    {
+      "command": "EVENT_SOUND_PLAY_EFFECT",
+      "args": {
+        "type": "tone",
+        "priority": "high",
+        "pitch": 1,
+        "frequency": 50,
+        "duration": 4.25,
+        "wait": false,
+        "effect": 0,
+        "__collapse": false
+      },
+      "id": "27ff8d3b-c189-493d-aaf5-6f2cb58c8cb8"
+    },
+    {
+      "command": "EVENT_TEXT",
+      "args": {
+        "text": [
+          "                                Your\n\n       \n\n        ",
+          "                                Your\n\n                               name\n\n",
+          "                                Your\n\n                               name\n\n                                  is"
+        ],
+        "__section": "behavior",
+        "avatarId": "",
+        "minHeight": 4,
+        "maxHeight": 7,
+        "textX": 1,
+        "textY": 1,
+        "textHeight": 5,
+        "position": "bottom",
+        "clearPrevious": true,
+        "showFrame": false,
+        "speedIn": -3,
+        "speedOut": -3,
+        "closeWhen": "text",
+        "closeButton": "a",
+        "closeDelayTime": 0.2,
+        "closeDelayFrames": 30,
+        "__collapse": false
+      },
+      "id": "76a4c65a-df0f-4f6d-9c69-320850d209e4"
+    },
+    {
+      "command": "EVENT_SWITCH_SCENE",
+      "args": {
+        "sceneId": "0c609fde-fff2-4309-a0f4-6a8a90910340",
+        "x": {
+          "type": "number",
+          "value": 16
+        },
+        "y": {
+          "type": "number",
+          "value": 7
+        },
+        "direction": "down",
+        "fadeSpeed": 0,
+        "__collapse": false
+      },
+      "id": "fee620e5-d6c5-4799-82c6-2d734cd10347"
+    }
+  ],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "c5181b37-466a-4e32-b84a-18076bb63ad4",
+  "autoFadeEventCollapse": true
+}

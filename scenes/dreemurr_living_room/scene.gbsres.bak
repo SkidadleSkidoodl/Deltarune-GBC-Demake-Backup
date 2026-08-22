@@ -1,0 +1,30 @@
+{
+  "_resourceType": "scene",
+  "id": "17218d6d-0388-4837-a3ae-b6ae8cc2cb2a",
+  "_index": 8,
+  "name": "Dreemurr Living Room",
+  "backgroundId": "129d8d5d-670c-4abb-928e-a1285b12bac9",
+  "tilesetId": "",
+  "width": 41,
+  "height": 18,
+  "type": "TOPDOWN",
+  "colorModeOverride": "none",
+  "paletteIds": [],
+  "spritePaletteIds": [],
+  "collisions": "00163+0f8+009+0f4+002+0fd+005+0f!006+0f!008+0f2+002+0f4+00b+0f7+006+0f5+004+0f!0023+0f6+0025+0f2+0027+0f2+0025+0f6+009+0f6+00a+0f6+004+0f!004+0f!009+0f!004+0f!00a+0f!004+0f!004+0f!004+0fb+004+0fc+004+0f6+002+",
+  "autoFadeSpeed": 1,
+  "symbol": "scene_9",
+  "x": 392,
+  "y": 368,
+  "script": [],
+  "playerHit1Script": [],
+  "playerHit2Script": [],
+  "playerHit3Script": [],
+  "playerSpriteSheetId": "e75899a3-a40b-41df-8d6d-2253ff77fc0c",
+  "scrollBounds": {
+    "x": 0,
+    "y": 0,
+    "width": 41,
+    "height": 18
+  }
+}
