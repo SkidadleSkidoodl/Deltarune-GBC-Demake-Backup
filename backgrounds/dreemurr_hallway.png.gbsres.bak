@@ -1,0 +1,12 @@
+{
+  "_resourceType": "background",
+  "id": "e793ec0e-552b-4bc5-81e6-8c92a7458bdc",
+  "name": "dreemurr_hallway",
+  "symbol": "bg_hallway",
+  "tileColors": "",
+  "filename": "dreemurr_hallway.png",
+  "width": 30,
+  "height": 18,
+  "imageWidth": 240,
+  "imageHeight": 144
+}
